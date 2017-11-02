@@ -1,0 +1,13 @@
+<snippet>
+    <!-- Random symmetric matrix of size N*N -->
+    <content><![CDATA[
+matrix = [ [0] * ${3:N} for r in range(${3:N}) ]
+for r in range(${3:N}):
+    for c in range(r+1):
+        matrix[r][c] = matrix[c][r] = randint(${1:a}, ${2:b})
+for row in matrix:
+    print( ' '.join( map(str, row) ) )
+]]></content>
+    <tabTrigger>genmatsym</tabTrigger>
+    <scope>source.python</scope>
+</snippet>

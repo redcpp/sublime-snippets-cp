@@ -1,0 +1,10 @@
+<snippet>
+    <!-- Random permutation of numbers 1 to N -->
+    <content><![CDATA[
+seq = list(range(${1:1}, ${2:N+1}))
+shuffle(seq)
+print( ' '.join( map(str, seq) ) )
+]]></content>
+    <tabTrigger>genperm</tabTrigger>
+    <scope>source.python</scope>
+</snippet>

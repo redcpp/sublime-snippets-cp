@@ -1,0 +1,11 @@
+<snippet>
+    <!-- Random connected graph on N vertices -->
+    <!-- Simply union the edges of random tree and random graph -->
+    <content><![CDATA[
+graph = set((randint(0, i), i+1) for i in range(${1:N}-1)) | set((i,j) for i in range(${1:N}) for j in range(i) if randint(0,1))
+for a, b in graph:
+    print(a, b)
+]]></content>
+    <tabTrigger>gengraphconn</tabTrigger>
+    <scope>source.python</scope>
+</snippet>

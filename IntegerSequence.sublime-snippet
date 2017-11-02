@@ -1,0 +1,11 @@
+<snippet>
+    <!-- List of N random integers from interval [a,b] -->
+    <content><![CDATA[
+seq = [ randint(${1:a}, ${2:b}) for i in range(${3:N}) ]
+print( ' '.join( map(str, seq) ) )
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>genseq</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.python</scope>
+</snippet>

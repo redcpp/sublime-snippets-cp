@@ -1,0 +1,11 @@
+<snippet>
+    <!-- Random graph on N vertices (may be unconnected) -->
+    <!-- Output is the list of edges. Vertices are numbered from 0 - (N-1) -->
+    <content><![CDATA[
+graph = [ (i,j) for i in range(${1:N}) for j in range(i) if randint(0,1) ] )
+for a, b in graph:
+    print(a, b)
+]]></content>
+    <tabTrigger>gengraph</tabTrigger>
+    <scope>source.python</scope>
+</snippet>

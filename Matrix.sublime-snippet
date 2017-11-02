@@ -1,0 +1,10 @@
+<snippet>
+    <!-- Matrix of size NxN with random integers from interval [a,b] -->
+    <content><![CDATA[
+for r in range(${3:N}):
+    row = [ randint(${1:a}, ${2:b}) for c in range(${3:N}) ]
+    print( ' '.join( map(str, row) ) )
+]]></content>
+    <tabTrigger>genmat</tabTrigger>
+    <scope>source.python</scope>
+</snippet>

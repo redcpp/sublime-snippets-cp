@@ -1,0 +1,11 @@
+<snippet>
+    <!-- Matrix of size NxN with random integers from interval [a,b] -->
+    <!-- With zeros on diagonal -->
+    <content><![CDATA[
+for r in range(${3:N}):
+    row = [ randint(${1:a}, ${2:b}) if r != c else 0 for c in range(${3:N}) ]
+    print( ' '.join( map(str, row) ) )
+]]></content>
+    <tabTrigger>genmatz</tabTrigger>
+    <scope>source.python</scope>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+    <!-- Random tree on N vertices -->
+    <!-- Output is the list of edges. Vertices are numbered from 0 - (N-1) -->
+    <content><![CDATA[
+tree = [ (randint(0, i), i+1) for i in range(N-1) ]
+for a, b in tree:
+    print(a, b)
+]]></content>
+    <tabTrigger>gentree</tabTrigger>
+    <scope>source.python</scope>
+</snippet>

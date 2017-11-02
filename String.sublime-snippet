@@ -1,0 +1,8 @@
+<snippet>
+    <!-- Random string of length N with letters of your choice -->
+    <content><![CDATA[
+print( ''.join( choice(${1:ascii_uppercase}) for i in range(${2:N}) ) )
+]]></content>
+    <tabTrigger>genstr</tabTrigger>
+    <scope>source.python</scope>
+</snippet>
